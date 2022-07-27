@@ -12,18 +12,25 @@ import turtle
     #   3. Ask the user for the for a shape to draw.
     #   4. Draw the appropriate shape depending on their answer (call the right
     #      function)
+
 if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
-    turtle = turtle.Turtle()
+    turtle=turtle.Turtle()
     turtle.shape("turtle")
     turtle.speed(10000)
-    turtle.speed(0)
     turtle.color('green')
     turtle.pencolor('red')
 
+
+
     q1 = simpledialog.askstring(title='1?', prompt="what shape do you want, star triangle circle hexegon or square?")
 
+
+    if q1 == "road":
+        turtle.width(1000)
+
+        messagebox.showinfo(message='look, a turtle got on the rood')
 
     if q1 == "road":
         turtle.width(1000)
