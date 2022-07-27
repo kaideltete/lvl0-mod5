@@ -22,7 +22,7 @@ if __name__ == '__main__':
         turtle.color('green')
         turtle.pencolor('red')
 
-    q1 = simpledialog.askstring(title='1?', prompt="what shape do you want, triangle circle ore square?")
+    q1 = simpledialog.askstring(title='1?', prompt="what shape do you want, triangle circle hexegon or square?")
 
     turtle.width(100)
 
@@ -44,7 +44,7 @@ if __name__ == '__main__':
             turtle.forward(100)
             turtle.left(90)
 
-    pass
-
-
-#vroom
+    if q1 == "hexegon":
+        for i in range(30):
+            turtle.forward(100)
+            turtle.left(72)
