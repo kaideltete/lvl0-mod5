@@ -13,4 +13,38 @@ if __name__ == '__main__':
     #   3. Ask the user for the for a shape to draw.
     #   4. Draw the appropriate shape depending on their answer (call the right
     #      function)
+    if __name__ == '__main__':
+        window = turtle.Screen()
+        window.bgcolor('white')
+        turtle = turtle.Turtle()
+        turtle.shape("turtle")
+        turtle.speed(0)
+        turtle.color('green')
+        turtle.pencolor('red')
+
+    q1 = simpledialog.askstring(title='1?', prompt="what shape do you want, triangle circle ore square?")
+
+    turtle.width(100)
+
+    if q1 == "circle":
+        messagebox.showinfo(message='look, a car on the rood')
+        for i in range(100):
+            turtle.pencolor('black')
+            turtle.forward(10)
+            turtle.left(9)
+
+
+    if q1 == "triangle":
+        for i in range(30):
+            turtle.forward(100)
+            turtle.left(120)
+
+    if q1 == "square":
+        for i in range(16):
+            turtle.forward(100)
+            turtle.left(90)
+
     pass
+
+
+#vroom
