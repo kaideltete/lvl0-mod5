@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     for i in range (9):
         turtle.penup()
-        turtle.forward(100)
+        turtle.forward(50)
         turtle.pendown()
         q1 = simpledialog.askinteger(title='home', prompt="what size house do you want?")
         turtle.speed(q1)
@@ -57,3 +57,7 @@ if __name__ == '__main__':
                 turtle.forward(q1)
 
             turtle.left(180)
+
+
+
+
