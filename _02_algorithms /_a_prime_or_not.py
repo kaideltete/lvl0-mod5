@@ -16,16 +16,18 @@ if __name__ == '__main__':
     #     the number is not prime.
 
 
-    q1 = simpledialog.askinteger(title='number', prompt="give a number between _ and i will tell you if it is prime")
+    q1 = simpledialog.askinteger(title='number', prompt="give me a number and i will tell you if it is prime")
     cou=0
     for i in range(2, q1):
         ansc = (q1)%(i)
         print(ansc)
         if( q1 % i == 0):
-            messagebox.showinfo('',"that is not a prime number")
+            messagebox.showinfo('',"that is not a prime number😕")
             break
         else:
             cou += 1
     print(cou)
     if cou == q1-2:
-        messagebox.showinfo('',"that is a prime number")
+        messagebox.showinfo('',"that is a prime number😀")
+
+
