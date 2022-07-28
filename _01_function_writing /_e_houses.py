@@ -2,7 +2,7 @@
 Have the turtle draw a row of houses.
 """
 from tkinter import messagebox, simpledialog, Tk
-
+import turtle
 
 if __name__ == '__main__':
     # TODO)
@@ -25,4 +25,39 @@ if __name__ == '__main__':
     #      (JUST the roof part): draw_pointy_roof, draw_flat_roof
     #   11) By calling the correct "roof" function, make large houses have
     #      flat roofs and all the others have pointy roofs.
-    pass
+    window = turtle.Screen()
+    window.bgcolor('white')
+    turtle = turtle.Turtle()
+    turtle.shape("turtle")
+    turtle.color('green')
+    turtle.pencolor('red')
+
+    for i in range (9):
+        turtle.penup()
+        turtle.forward(100)
+        turtle.pendown()
+        q1 = simpledialog.askinteger(title='home', prompt="what size house do you want?")
+        turtle.speed(q1)
+
+        for i in range(4):
+            turtle.forward(q1)
+            turtle.left(90)
+
+        if q1 < 249:
+            turtle.penup()
+            turtle.forward(q1)
+            turtle.left(90)
+            turtle.forward(q1)
+            turtle.left(450)
+            turtle.pendown()
+            turtle.forward(q1)
+
+            for i in range(3):
+                turtle.right(120)
+                turtle.forward(q1)
+
+            turtle.left(180)
+
+
+
+
