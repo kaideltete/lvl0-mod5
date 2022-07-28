@@ -22,12 +22,12 @@ if __name__ == '__main__':
         ansc = (q1)%(i)
         print(ansc)
         if( q1 % i == 0):
-            messagebox.showinfo('',"that is not a prime number😕")
+            messagebox.showinfo('',"that is not a prime number")
             break
         else:
             cou += 1
     print(cou)
     if cou == q1-2:
-        messagebox.showinfo('',"that is a prime number😀")
+        messagebox.showinfo('',"that is a prime number")
 
 
