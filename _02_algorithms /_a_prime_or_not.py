@@ -20,12 +20,10 @@ if __name__ == '__main__':
         ansc = (q1)%(i)
         print(ansc)
         if( q1 % i == 0):
-            messagebox.showinfo('',"that is not a prime number")
+            messagebox.showinfo('',"your number is not prime")
             break
         else:
             count += 1
     print(count)
     if count == q1-2:
-        messagebox.showinfo('',"that is a prime number")
-
-
+        messagebox.showinfo('',"your number is prime")
