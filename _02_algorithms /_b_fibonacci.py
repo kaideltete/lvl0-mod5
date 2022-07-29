@@ -27,9 +27,10 @@ if __name__ == '__main__':
         num_1=num_2
         num_2=sum
         print(sum)
-
+#scrol up and down when it loops 850 times
 
 
 
 
     pass
+
