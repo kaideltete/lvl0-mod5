@@ -57,7 +57,3 @@ if __name__ == '__main__':
                 turtle.forward(q1)
 
             turtle.left(180)
-
-
-
-
